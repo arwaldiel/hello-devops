@@ -1,0 +1,12 @@
+{
+  "name": "Hello DevOps Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "postCreateCommand": "npm install",
+  "forwardPorts": [8080],
+  "remoteUser": "root"
+}
